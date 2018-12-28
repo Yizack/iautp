@@ -25,6 +25,7 @@ Agente Inteligente para el soporte del Sistema de Matrículas de la Universidad 
 ## Preguntas que se pueden hacer 
 Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](https://github.com/Yizack/iautp/tree/master/aiml/utp))
 ##### Sistema de matrícula `aiml/utp/matricula.aiml`
+```
 1.	¿Puedo ver los estudiantes matriculados en un grupo?
 2.	Se me olvidó la contraseña del sitio de matricula
 3.	Se me olvidó la clave del wifi
@@ -49,7 +50,9 @@ Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](htt
 22.	¿Qué hacer cuando el estudiante está inactivo por morosidad?
 23.	¿Como puedo saber mi horario?
 24.	¿Cuál es el sitio de matrículas?
+```
 ##### Interacciones adicionales `aiml/utp/usuario.aiml`
+```
 25. Hola
 26. Mi nombre es
 27. ¿Cual es mi nombre?
@@ -58,4 +61,4 @@ Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](htt
 30. ¿Quién te creó?
 31. Oye
 32. ¿Que haces?
-33. ¿De donde eres?
+33. ¿De donde eres?```
