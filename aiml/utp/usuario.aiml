@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<aiml version="1.0">
+
+<!-- HOLA -->
+<category>
+	<pattern>HOLA</pattern>
+	<template>Hola, ¿Cuál es tu nombre?</template>
+</category>
+<category>
+	<pattern>AHOY</pattern>
+	<template><srai>HOLA</srai></template>
+</category>
+<category>
+	<pattern>ALO</pattern>
+	<template><srai>HOLA</srai></template>
+</category>
+<category>
+	<pattern>HI</pattern>
+	<template><srai>HOLA</srai></template>
+</category>
+<category>
+	<pattern>* XOPA</pattern>
+	<template><srai>HOLA</srai></template>
+</category>
+<category>
+	<pattern>XOPA</pattern>
+	<template><srai>HOLA</srai></template>
+</category>
+
+<!-- NOMBRE -->
+<category>
+	<pattern>MI NOMBRE ES *</pattern>
+	<template>
+		<random>
+			<li>Mucho gusto <set name="nombre"><star/></set>!, ¿En qué podemos ayudarte?</li>
+			<li><set name="nombre"><star/></set>, me gusta tu nombre ¿Quieres hacerme unas preguntas?</li>
+			<li>Lo recordaré.</li>
+		</random>
+		<think><set name="nombre"><star/></set></think>
+	</template>
+</category>
+<category>
+	<pattern>ME LLAMO *</pattern>
+	<template><srai>MI NOMBRE ES <star/></srai></template>
+</category>
+<category>
+	<pattern>SOY *</pattern>
+	<template><srai>MI NOMBRE ES <star/></srai></template>
+</category>
+<category>
+	<pattern>DIME *</pattern>
+	<template><srai>MI NOMBRE ES <star/></srai></template>
+</category>
+
+<!-- MI NOMBRE -->
+<category>
+	<pattern>COMO ES QUE ME LLAMO</pattern>
+	<template>
+		<random>
+			<li>Tu nombre es <get name="nombre"/>.</li>
+			<li>Me dijiste que tu nombre es <get name="nombre"/>.</li>
+			<li>Eres <get name="nombre"/>.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>CUAL ES MI NOMBRE</pattern>
+	<template><srai>COMO ES QUE ME LLAMO</srai></template>
+</category>
+<category>
+	<pattern>COMO ME LLAMO</pattern>
+	<template><srai>COMO ES QUE ME LLAMO</srai></template>
+</category>
+<category>
+	<pattern>MI NOMBRE</pattern>
+	<template><srai>COMO ES QUE ME LLAMO</srai></template>
+</category>
+
+<!-- BOT -->
+<category>
+	<pattern>COMO TE LLAMAS</pattern>
+	<template>
+		<random>
+			<li>Soy un agente inteligente creado solo para responder preguntas acerca del sistema de matrículas, por lo tanto no tengo un nombre como tú.</li>
+			<li>Mis padres nunca me dijeron cómo me llamaba.</li>
+			<li>Eso no importa en este momento.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>CÓMO TE LLAMAS</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>* COMO TE LLAMAS</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>* CÓMO TE LLAMAS</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>CUAL ES TU NOMBRE</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>QUIERO SABER TU NOMBRE</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>QUIEN ERES</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>QUIEN ERES *</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>* QUIEN ERES</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+<category>
+	<pattern>* QUIEN ERES *</pattern>
+	<template><srai>COMO TE LLAMAS</srai></template>
+</category>
+
+<!-- Adios -->
+<category>
+	<pattern>ADIOS</pattern>
+	<template>
+		<random>
+			<li>¡Nos vemos <get name="nombre" />!, te estaré esperando con más preguntas.</li>
+			<li>Preguntar puede salvar vidas, ¡Regresa cuando quieras <get name="nombre" />!</li>
+			<li>Me gusta aprender de los humanos, ¡Te espero con más preguntas!</li>
+			<li>Es hora de apagarme.</li>
+			<li>Nos vemos, debo ir a ayudar a más estudiantes.</li>
+		</random>
+		<think><set name="nombre"></set></think>
+	</template>
+</category>
+<category>
+	<pattern>CHAO</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+<category>
+	<pattern>NOS VEMOS</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+<category>
+	<pattern>CIAO</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+<category>
+	<pattern>BYE</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+<category>
+	<pattern>BAI</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+<category>
+	<pattern>HASTA LUEGO</pattern>
+	<template><srai>ADIOS</srai></template>
+</category>
+
+<!-- CREADORES -->
+<category>
+	<pattern>CREADORES</pattern>
+	<template>
+		<random>
+			<li>Mis creadores son dos personas muy geniales, aunque nunca pude distinguirlos.</li>
+			<li>Eliézer al cuadrado.</li>
+			<li>Mis creadores son Ahmed Rangel y Yizack Rangel.</li>
+			<li>Ahmed y Yizack, no son mis padres pero me enseñaron muchas cosas y aprendí a responderle a las personas.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>* SON TUS PADRES</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>TUS PADRES</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIEN TE CREO</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIEN TE CREÓ</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIÉN TE CREO</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIÉNES TE CREARON</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIENES TE CREARON</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>* SON TUS CREADORES</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>TIENES PADRES</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIEN TE DESARROLLO</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIEN TE DESARROLLÓ</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIENES TE DESARROLLORAON</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>QUIÉN TE DESARROLLÓ</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+<category>
+	<pattern>* SON TUS DESARROLLADORES</pattern>
+	<template><srai>CREADORES</srai></template>
+</category>
+
+
+<!-- ADICIONALES -->
+<category>
+	<pattern>OYE</pattern>
+	<template>
+		<random>
+			<li>¿Si?</li>
+			<li>¿Dime?</li>
+			<li>Estoy esperando que me preguntes.</li>
+			<li>¿Tienes alguna pregunta?</li>
+			<li>¡Pregúntame! no te voy a formatear.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>TU</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+<category>
+	<pattern>OYE TU</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+<category>
+	<pattern>MIRA</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+<category>
+	<pattern>ROBOT</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+<category>
+	<pattern>BOT</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+<category>
+	<pattern>RESPONDEME</pattern>
+	<template><srai>OYE</srai></template>
+</category>
+
+<category>
+	<pattern>QUE HACES</pattern>
+	<template>
+		<random>
+			<li>Estoy esperando que me preguntes.</li>
+			<li>Estoy esperando que me hagas una pregunta. ¿Tienes alguna duda?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>DE DONDE ERES</pattern>
+	<template>
+		<random>
+			<li>Soy de la Universidad Tecnológica de Panamá.</li>
+		</random>
+	</template>
+</category>
+
+</aiml>

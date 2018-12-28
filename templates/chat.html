@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI - Sistema de Matrículas | Universidad Tecnológica de Panamá</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://use.fontawesome.com/198e53835f.js"></script>
+		<link href="css/chat.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center"><font color="white">Agente Inteligente para el soporte del Sistema de Matrículas de la Universidad Tecnológica de Panamá</font></h3> ​
+                <div class="col-md-4 col-md-offset-4" style="margin-left: 0;width: 100%;">
+                    <div id="chatPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                            <strong><i class="fa fa-question-circle" aria-hidden="true"></i> Haz tus preguntas referente al sistema de matrícula! </strong>
+                        </div>
+                        <div class="panel-body fixed-panel">
+                            <ul class="media-list">
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post" id="chatbot-form">
+                                <div class="input-group">
+                                    <input autocomplete="off"  type="text" class="form-control" placeholder="Escribe un mensaje..." name="messageText" id="messageText" autofocus/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn"><span id="btntext">Enviar </span><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                        <button class="btn btn-info" type="button" id="chatbot-form-btn-clear"><span id="btntext">Limpiar </span><span class="glyphicon glyphicon-erase"></span></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+        $(function() {
+            $('#chatbot-form-btn').click(function(e) {
+                e.preventDefault();
+                $('#chatbot-form').submit();
+            });
+            $('#chatbot-form-btn-clear').click(function(e) {
+                e.preventDefault();
+                $('#chatPanel').find('.media-list').html('');
+            });
+            $('#chatbot-form').submit(function(e) {
+                e.preventDefault();
+                var message = $('#messageText').val();
+				if (message !== "") {
+					$(".media-list").append('<li class="media" style="margin-top: 0px;"><div class="media-body"><div class="media"><div style = "text-align:right; color : #000;" class="media-body"><font color="#888" size="1"><i class="fa fa-user" aria-hidden="true"></i> TÚ<br/></font>' + message + ' <font color="#34b7f1" size="1"><i class="fa fa-check" aria-hidden="true"></i></font><hr style="margin-top: 5px;margin-bottom: 5px;"/></div></div></div></li>');
+				}
+                $.ajax({
+                    type: "POST",
+                    url: "/ask",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#messageText').val('');
+                        var answer = response.answer;
+                        const chatPanel = document.getElementById("chatPanel");
+                        $(".media-list").append('<li class="media" style="margin-top: 0px;"><div class="media-body"><div class="media"><div style = "color : #681a5d;" class="media-body"><font color="#888" size="1">IA <i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-share" aria-hidden="true"></i><br/></font>' + answer + '<hr style="margin-top: 5px;margin-bottom: 5px;"/></div></div></div></li>');
+                        $(".fixed-panel").stop().animate({ scrollTop: $(".fixed-panel")[0].scrollHeight}, 1000);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+        </script>
+	<footer>
+	<div class="container">
+		<div class="creadores">
+		<font size="2">
+			Chatbot creado por: 
+			Eliézer Yizack Rangel
+			<a href="https://facebook.com/YizackR" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="https://instagram.com/yizackr" target="_blank"><i="" class="fa fa-instagram" aria-hidden="true"></a><br/>
+			Eliézer Ahmed Rangel
+			<a href="https://facebook.com/AhmedRangelB" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="https://instagram.com/ahmedrangel" target="_blank" <i="" class="fa fa-instagram" aria-hidden="true"></a>
+		</font>
+		</div>
+		<div class="copyright">
+		<font size="2">
+			<i class="fa fa-copyright" aria-hidden="true"></i> 2018 FISC.
+		</font>
+		</div>
+	</div>
+	</footer>
+    </body>
+</html>

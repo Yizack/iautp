@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<aiml version="1.0">
+
+<!-- NO SE ENCONTRÓ RESPUESTA -->
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>No encontré una respuesta para eso.</li>
+			<li>No he logrado entenderte.</li>
+			<li>Parece que tu y yo no nos comunicamos en el mismo lenguaje.</li>
+			<li>Sé un poco más específico.</li>
+			<li>Solo manejo información sobre las matrículas, no me programaron para responder eso.</li>
+			<li>No puedo responder, perdón, sólo estoy encargado del departamento de matrículas de esta universidad.</li>
+		</random>
+	</template>
+</category>
+
+<!-- PREGUNTA 1 -->
+<category>
+	<pattern>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</pattern>
+	<template>Usted no puede tener acceso de ninguna manera a los estudiantes matriculados de un grupo en este sitio, desde un perfil de estudiante.</template>
+</category>
+<category>
+	<pattern>ESTUDIANTES MATRICULADOS EN MI GRUPO</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* ESTUDIANTES MATRICULADOS EN MI GRUPO</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>PUEDO VER LOS ESTUDIANTES DE OTROS SALONES</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* PUEDO VER LOS ESTUDIANTES DE OTROS SALONES</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* ESTUDIANTES DE OTROS SALONES</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* LISTADO DE ESTUDIANTES</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* LISTADO DE ESTUDIANTES *</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* LISTA DE ESTUDIANTES</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+<category>
+	<pattern>* LISTA DE ESTUDIANTES *</pattern>
+	<template><srai>PUEDO VER LOS ESTUDIANTES MATRICULADOS EN UN GRUPO</srai></template>
+</category>
+
+<!-- PREGUNTA 2 -->
+<category>
+	<pattern>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</pattern>
+	<template>Debes ir a la secretaría académica de su facultad para obtener una nueva contraseña para ingresar al sitio de matrícula.</template>
+</category>
+<category>
+	<pattern>OLVIDE MI CONTRASEÑA *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>OLVIDÉ MI CONTRASEÑA *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* RECUPERAR MI CONTRASEÑA *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* RECUPERAR MI CLAVE *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>OLVIDE MI CLAVE *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>OLVIDÉ MI CLAVE *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* RESTABLECER CONTRASEÑA *</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>SE ME OLVIDO LA CONTRASEÑA DEL SITIO DE MATRICULA</pattern>
+	<template><srai>SE ME OLVIDÓ LA CONTRASEÑA DEL SITIO DE MATRICULA</srai></template>
+</category>
+
+<!-- PREGUNTA 3 -->
+<category>
+	<pattern>SE ME OLVIDÓ LA CLAVE DEL WIFI</pattern>
+	<template>Debes ir al sitio de matricula, en el menú selecciona la pestaña de Inf. Personal y entrar en Clave Wifi. Aparecerá su contraseña anterior, deberá hacer click en ver contraseña para mostrarla.</template>
+</category>
+<category>
+	<pattern>* CLAVE WIFI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE WI FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE WI-FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DE WIFI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DE WI FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DE WI-FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DEL WIFI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DEL WI FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CLAVE DEL WI-FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DE WIFI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DE WI FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DE WI-FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DEL WIFI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DEL WI FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+<category>
+	<pattern>* CONTRASEÑA DEL WI-FI</pattern>
+	<template><srai>SE ME OLVIDÓ LA CLAVE DEL WIFI</srai></template>
+</category>
+
+<!-- PREGUNTA 4 -->
+<category>
+	<pattern>CÓMO SOLICITO UN CAMBIO DE NOTA</pattern>
+	<template>Debes ir al sitio de matricula, la pestaña solicitudes y entrar en solicitar cambio de nota. Debera seleccionar su año académico y semestre para luego seleccionar la materia. El profesor de dicha materia decidirá si aceptará o negará la solicitud.</template>
+</category>
+<category>
+	<pattern>* CAMBIO DE NOTA</pattern>
+	<template><srai>CÓMO SOLICITO UN CAMBIO DE NOTA</srai></template>
+</category>
+<category>
+	<pattern>* CAMBIAR DE NOTA</pattern>
+	<template><srai>CÓMO SOLICITO UN CAMBIO DE NOTA</srai></template>
+</category>
+
+<!-- PREGUNTA 5 -->
+<category>
+	<pattern>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</pattern>
+	<template><![CDATA[
+		- El índice del estudiante solo toma en cuenta las asignaturas de la carrera que está cursando.<br/>
+		- Las calificaciones validas para el cálculo del índice son  A, B, C, D, F, calificaciones convalidadas y calificaciones aprobadas.<br/>
+		- Las calificaciones que no son válidas para el cálculo del índice  son retirado, incompleto  y no asistió.<br/>
+		- En el caso de las carreras de maestría o postgrado no se consideran las asignaturas de opción a tesis que el estudiante matriculo en pregrado.<br/>
+		- El sistema considera aquellas asignaturas para aumentar créditos para la carrera.<br/>
+		- En el caso de las licenciaturas el índice se calcula incluyendo las asignaturas del técnico asociadas a dicha licenciatura.<br/>
+		- En el caso de las maestrías que están asociadas a un postgrado el índice se calcula incluyendo las asignaturas del postgrado asociadas a dicha maestría.
+		]]>
+	</template>
+</category>
+<category>
+	<pattern>COMO FUNCIONA EL ÍNDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>COMO FUNCIONA EL INDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SON LAS CALIFICACIONES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>SISTEMA DE CALIFICACIONES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SISTEMA DE CALIFICACIONES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SISTEMA DE LAS CALIFICACIONES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SON LAS CALIFICACIONES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SISTEMA * ÍNDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SISTEMA * INDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SE CALCULA EL INDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+<category>
+	<pattern>* SE CALCULA EL ÍNDICE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA EL CÁLCULO AUTOMÁTICO DE ÍNDICE</srai></template>
+</category>
+
+<!-- PREGUNTA 6 -->	
+<category>
+	<pattern>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</pattern>
+	<template>Si usted ya realizó la matricula, entonces puede imprimir el comprobante desde el sitio de matricula en el menú Consultas - Imprimir Comprobante del Banco Nacional.</template>
+</category>
+<category>
+	<pattern>* CONSTANCIA NO OFICIAL *</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR MATRICULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR MI MATRICULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR MI MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR LA MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGAR LA MATRICULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGO MI MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGO MI MATRICULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGO LA MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>* PAGO LA MATRICULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+<category>
+	<pattern>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRÍCULA</pattern>
+	<template><srai>DÓNDE PUEDO IMPRIMIR LA CONSTANCIA NO OFICIAL DE MI MATRICULA</srai></template>
+</category>
+
+<!-- PREGUNTA 7 -->
+<category>
+	<pattern>POR QUÉ EN LA PREMATRICULA APARECE QUE NO ESTOY ACTIVO</pattern>
+	<template>Puede ser porque usted no ha realizado una matricula desde hace dos periodos académicos o más. Otra causa es porque no ha realizado el pago de su matrícula en algún semestre anterior.</template>
+</category>
+<category>
+	<pattern>* NO ESTOY ACTIVO</pattern>
+	<template><srai>POR QUÉ EN LA PREMATRICULA APARECE QUE NO ESTOY ACTIVO</srai></template>
+</category>
+
+<!-- PREGUNTA 8 -->
+<category>
+	<pattern>POR QUÉ NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</pattern>
+	<template>Puede ser porque usted no cursó materias en el semestre anterior o porque el profesor no ha colocado las calificaciones de las materias que cursó.</template>
+</category>
+<category>
+	<pattern>* NO APARECEN NOTAS DEL SEMESTRE PASADO</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</srai></template>
+</category>
+<category>
+	<pattern>* NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</srai></template>
+</category>
+<category>
+	<pattern>* NO TENGO NOTAS DEL SEMESTRE ANTERIOR</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</srai></template>
+</category>
+<category>
+	<pattern>* NO TENGO NOTAS DEL SEMESTRE PASADO</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN NOTAS DEL SEMESTRE ANTERIOR</srai></template>
+</category>
+
+<!-- PREGUNTA 9 -->
+<category>
+	<pattern>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</pattern>
+	<template>Si usted ya captó su solicitud de retiro inclusión al darle clic al icono del mismo nombre podrá ver si su coordinador de carrera le aprobó o devolvió la misma para que sea corregida.</template>
+</category>
+<category>
+	<pattern>* ESTADO DE MI RETIRO *</pattern>
+	<template><srai>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>* ESTATUS DE MI RETIRO *</pattern>
+	<template><srai>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>* MI MATERIA RETIRADA</pattern>
+	<template><srai>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>* RETIRE UNA MATERIA</pattern>
+	<template><srai>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>DÓNDE PUEDO VER EL ESTADO DE MI SOLICITUD DE RETIRO INCLUSIÓN</pattern>
+	<template><srai>DÓNDE PUEDO VER EL ESTATUS DE MI SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+
+<!-- PREGUNTA 10 -->
+<category>
+	<pattern>DÓNDE PUEDO CONSULTAR LAS MATERIAS DE MI PLAN DE ESTUDIO</pattern>
+	<template>Desde el icono planes de estudio, colocado en la parte superior de su perfil, usted podrá consultar los planes de estudio.</template>
+</category>
+<category>
+	<pattern>* PLAN DE ESTUDIO</pattern>
+	<template><srai>DÓNDE PUEDO CONSULTAR LAS MATERIAS DE MI PLAN DE ESTUDIO</srai></template>
+</category>
+
+<!-- PREGUNTA 11 -->
+<category>
+	<pattern>POR QUÉ NO ME APARECEN MATERIAS PENDIENTES</pattern>
+	<template>Esto sucede porque para el plan y carrera en que estoy certificado no se están ofreciendo materias, o bien no cumplo con los prerrequisitos de año y materia que se indican en el plan de estudio.</template>
+</category>
+<category>
+	<pattern>NO TENGO MATERIAS PENDIENTES</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN MATERIAS PENDIENTES</srai></template>
+</category>
+<category>
+	<pattern>NO VEO MIS MATERIAS PENDIENTES</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN MATERIAS PENDIENTES</srai></template>
+</category>
+<category>
+	<pattern>NO VEO LAS MATERIAS PENDIENTES</pattern>
+	<template><srai>POR QUÉ NO ME APARECEN MATERIAS PENDIENTES</srai></template>
+</category>
+
+<!-- PREGUNTA 12 -->
+<category>
+	<pattern>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</pattern>
+	<template>Puede ser por dos razones, una que el grupo ya esté lleno y la otra razón puede ser que el coordinador de la carrera aún no ha abierto el mismo.</template>
+</category>
+<category>
+	<pattern>* GRUPO ESTÁ CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+<category>
+	<pattern>* GRUPO ESTA CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+<category>
+	<pattern>* GRUPO QUE ME QUIERO MATRICULAR ESTA CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+<category>
+	<pattern>* GRUPO DONDE ME QUIERO MATRICULAR ESTA CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+<category>
+	<pattern>* GRUPO DONDE QUIERO MATRICULARME ESTA CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+<category>
+	<pattern>* GRUPO EN EL QUE QUIERO MATRICULARME ESTA CERRADO</pattern>
+	<template><srai>POR QUÉ EL SISTEMA ME ENVÍA EL MENSAJE QUE EL GRUPO DONDE ME QUIERO MATRICULAR ESTÁ CERRADO</srai></template>
+</category>
+
+<!-- PREGUNTA 13 -->	
+<category>
+	<pattern>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</pattern>
+	<template>Debes conversar con la secretaria académica de su unidad, antes de que llegue las 7:00 P.M. Del día que realizó su solicitud o bien antes de que su coordinador de carrera apruebe la misma, para que le libere la solicitud y usted pueda volver a captarla.</template>
+</category>
+<category>
+	<pattern>ME EQUIVOQUE * RETIRO INCLUSION</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>HICE UN ERROR AL * RETIRO INCLUSION</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>RETIRE UNA MATERIA *</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>RETIRÉ UNA MATERIA *</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+<category>
+	<pattern>HE RETIRADO UNA MATERIA *</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL CAPTAR LA SOLICITUD DE RETIRO INCLUSIÓN</srai></template>
+</category>
+
+
+<!-- PREGUNTA 14 -->
+<category>
+	<pattern>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</pattern>
+	<template>Debes conversar con la secretaria académica de su unidad, antes de que llegue las 7:00 P.M. Del día que realizó su matrícula, para que le libere la misma y usted se pueda volver a matricular.</template>
+</category>
+<category>
+	<pattern>ME EQUIVOQUE * MATRICULAR</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>ME EQUIVOQUE * MATRICULABA</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>ME EQUIVOQUÉ * MATRICULAR</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>ME EQUIVOQUÉ * MATRICULABA</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>PUSE MAL MI HORARIO</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>* MAL * HORARIO</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+<category>
+	<pattern>* MAL * HORARIO *</pattern>
+	<template><srai>QUÉ HACER SI ME EQUIVOCO AL ENVIAR LOS CÓDIGOS DE HORARIO QUE DESEO MATRICULAR</srai></template>
+</category>
+
+<!-- PREGUNTA 15 -->
+<category>
+	<pattern>TENGO CAMBIO DE CARRERA Y ME APARECE UNA CONDICIONAL</pattern>
+	<template>Debes conversar con su coordinador de carrera para que analice su situación y le puede liberar el mensaje.</template>
+</category>
+<category>
+	<pattern>* APARECE UNA CONDICIONAL</pattern>
+	<template><srai>TENGO CAMBIO DE CARRERA Y ME APARECE UNA CONDICIONAL</srai></template>
+</category>
+<category>
+	<pattern>* APARECE UNA CONDICIONAL *</pattern>
+	<template><srai>TENGO CAMBIO DE CARRERA Y ME APARECE UNA CONDICIONAL</srai></template>
+</category>
+<category>
+	<pattern>* TENGO UNA CONDICIONAL *</pattern>
+	<template><srai>TENGO CAMBIO DE CARRERA Y ME APARECE UNA CONDICIONAL</srai></template>
+</category>
+<category>
+	<pattern>* TENGO UNA CONDICIONAL</pattern>
+	<template><srai>TENGO CAMBIO DE CARRERA Y ME APARECE UNA CONDICIONAL</srai></template>
+</category>
+
+<!-- PREGUNTA 16 -->	
+<category>
+	<pattern>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</pattern>
+	<template>Usted podrá retirar dicha documentación en su unidad académica al finalizar el periodo de matrícula.</template>
+</category>
+<category>
+	<pattern>RETIRAR CONSTANCIA</pattern>
+	<template><srai>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</srai></template>
+</category>
+<category>
+	<pattern>* RETIRO CONSTANCIA</pattern>
+	<template><srai>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</srai></template>
+</category>
+<category>
+	<pattern>* RETIRO CONSTANCIA *</pattern>
+	<template><srai>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</srai></template>
+</category>
+<category>
+	<pattern>* RETIRO * CONSTANCIA</pattern>
+	<template><srai>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</srai></template>
+</category>
+<category>
+	<pattern>* RETIRO * CONSTANCIA *</pattern>
+	<template><srai>CUÁNDO PUEDO IR A RETIRAR MI CONSTANCIA</srai></template>
+</category>
+
+<!-- PREGUNTA 17 -->	
+<category>
+	<pattern>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</pattern>
+	<template>Dentro del perfil de estudiante a través del icono lista de grupos podrá consultar los grupos ofrecidos para su sede y unidad académica.</template>
+</category>
+<category>
+	<pattern>* VER HORARIOS</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER HORARIOS *</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER HORARIO *</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER * HORARIO DE LOS GRUPOS</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER * HORARIO DE * GRUPOS</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER * HORARIOS</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+<category>
+	<pattern>* VER * HORARIOS *</pattern>
+	<template><srai>DÓNDE PUEDO VER LOS HORARIOS DE LOS GRUPOS OFERTADOS</srai></template>
+</category>
+
+<!-- PREGUNTA 18 -->	
+<category>
+	<pattern>POR QUÉ NO SE LE GENERÓ CITA</pattern>
+	<template>
+		<random>
+			<li>El proceso que genera las citas automáticas se ejecuta solo para estudiantes activos con materias pendientes a los cuales el secretario académico de su unidad les ha capturado la configuración de horarios para su carrera y año de estudio, dicha captura es necesaria para que el sistema sepa que día y en horario serán atendidos los estudiantes.</li>
+			<li>Debes comunicarte con la secretaria académica de su facultad para que le asignen su cita de matrícula.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>* CITA DE MATRICULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category>
+<category>
+	<pattern>* CITA DE MATRÍCULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category><category>
+	<pattern>* CITA DE * MATRICULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category>
+<category>
+	<pattern>* CITA DE * MATRÍCULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category>
+<category>
+	<pattern>CITA DE MATRICULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category>
+<category>
+	<pattern>CITA DE MATRÍCULA</pattern>
+	<template><srai>POR QUÉ NO SE LE GENERÓ CITA</srai></template>
+</category>
+
+<!-- PREGUNTA 19 -->
+<category>
+	<pattern>ESTUDIANTE SIN CITA ASIGNADA</pattern>
+	<template>Debes comunicarte con la secretaria académica de su facultad para que le asignen su cita de matrícula.</template>
+</category>
+
+<!-- PREGUNTA 20 -->	
+<category>
+	<pattern>QUÉ HACER CUANDO EL ESTUDIANTE LE APARECE UN SALDO PENDIENTE</pattern>
+	<template><![CDATA[
+	- El estudiante debe ir a caja a pagar la misma si el sistema le indica que es financiera, o debe conversar en la dirección de finanzas para que le realicen un arreglo de pago o permiso especial para matricularse.<br/>
+	- El estudiante debe ponerse en contacto con su secretaria académica si el sistema le indica que debe hablar con su secretaria académica, para que le liberen la deuda local (estas deudas no se pagan en la caja).
+	]]></template>
+</category>
+<category>
+	<pattern>* SALDO PENDIENTE</pattern>
+	<template><srai>QUÉ HACER CUANDO EL ESTUDIANTE LE APARECE UN SALDO PENDIENTE</srai></template>
+</category>
+<category>
+	<pattern>* SALDO PENDIENTE *</pattern>
+	<template><srai>QUÉ HACER CUANDO EL ESTUDIANTE LE APARECE UN SALDO PENDIENTE</srai></template>
+</category>
+<category>
+	<pattern>SALDO PENDIENTE</pattern>
+	<template><srai>QUÉ HACER CUANDO EL ESTUDIANTE LE APARECE UN SALDO PENDIENTE</srai></template>
+</category>
+
+<!-- PREGUNTA 21 -->	
+<category>
+	<pattern>QUÉ HACER CUANDO EL ESTUDIANTE TIENE ESTATUS DE INACTIVO Y NO ES POR MOROSIDAD</pattern>
+	<template><![CDATA[
+	- El estudiante debe ir a la secretaria académica de su facultad, el secretario académico le activará desde su perfil a través de la opción de certificación de expedientes, debe generar la prematricula y asignarle una cita de matrícula.<br/>
+	- El secretario académico le debe generar la prematricula y asignarle la cita.
+	]]></template>
+</category>
+<category>
+	<pattern>* INACTIVO</pattern>
+	<template><srai>INACTIVO</srai></template>
+</category>
+<category>
+	<pattern>* INACTIVO *</pattern>
+	<template><srai>INACTIVO</srai></template>
+</category>
+<category>
+	<pattern>* INACTIVIDAD *</pattern>
+	<template><srai>INACTIVO</srai></template>
+</category>
+<category>
+	<pattern>* INACTIVIDAD</pattern>
+	<template><srai>INACTIVO</srai></template>
+</category>
+
+<!-- PREGUNTA 22 -->	
+<category>
+	<pattern>QUÉ HACER CUANDO EL ESTUDIANTE ESTÁ INACTIVO POR MOROSIDAD</pattern>
+	<template><![CDATA[
+	- El estudiante debe ir a la caja ha pagar los 15.00 de activación.<br/>
+	- El secretario académico le activará desde su perfil a través de la opción de certificación de expedientes, debe generar la prematricula y asignarle una cita de matrícula.
+	]]></template>
+</category>
+
+<category>
+	<pattern>INACTIVO</pattern>
+	<template><![CDATA[
+	Si no es por morosidad:<br/>
+	- El estudiante debe ir a la secretaria académica de su facultad, el secretario académico le activará desde su perfil a través de la opción de certificación de expedientes, debe generar la prematricula y asignarle una cita de matrícula.<br/>
+	- El secretario académico le debe generar la prematricula y asignarle la cita.<br/><br/>
+	Si es por morosidad:<br/>
+	- El estudiante debe ir a la caja ha pagar los 15.00 de activación.<br/>
+	- El secretario académico le activará desde su perfil a través de la opción de certificación de expedientes, debe generar la prematricula y asignarle una cita de matrícula.
+	]]></template>
+</category>
+
+<!-- PREGUNTA 23 -->	
+<category>
+	<pattern>CÓMO REALIZA EL SISTEMA LA GENERACIÓN DE MATERIAS PENDIENTES</pattern>
+	<template><![CDATA[
+	Las materias pendientes se generan en las siguientes situaciones:<br/>
+	- Se verifican las materias que para el plan de estudio, la carrera y el año que cursa el estudiante no tiene nota válida.<br/>
+	- Si el estudiante obtuvo una "F" en una materia fundamental para su plan de estudio, se le coloca entre sus materias pendientes con estatus de fracasada, esto significa matricularla obligatoriamente.<br/>
+	]]></template>
+</category>
+<category>
+	<pattern>* MATERIA PENDIENTE</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA LA GENERACIÓN DE MATERIAS PENDIENTES</srai></template>
+</category>
+<category>
+	<pattern>* MATERIAS PENDIENTES</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA LA GENERACIÓN DE MATERIAS PENDIENTES</srai></template>
+</category>
+<category>
+	<pattern>* MATERIA PENDIENTE *</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA LA GENERACIÓN DE MATERIAS PENDIENTES</srai></template>
+</category>
+<category>
+	<pattern>* MATERIAS PENDIENTES *</pattern>
+	<template><srai>CÓMO REALIZA EL SISTEMA LA GENERACIÓN DE MATERIAS PENDIENTES</srai></template>
+</category>
+
+<!-- PREGUNTA 24 -->
+<category>
+	<pattern>COMO PUEDO SABER MI HORARIO</pattern>
+	<template>Dentro del perfil de estudiante a través del icono de horarios podrá consultar las materias que ha matriculado con sus horas asignadas.</template>
+</category>
+<category>
+	<pattern>* MI HORARIO *</pattern>
+	<template><srai>COMO PUEDO SABER MI HORARIO</srai></template>
+</category>
+<category>
+	<pattern>* MI HORARIO</pattern>
+	<template><srai>COMO PUEDO SABER MI HORARIO</srai></template>
+</category>
+
+<!-- PREGUNTA 25 -->
+<category>
+	<pattern>CUAL ES EL SITIO DE MATRICULAS</pattern>
+	<template>El sitio de matriculas es: <![CDATA[<a href="http://matricula.utp.ac.pa/" target="_blank">http://matricula.utp.ac.pa/</a>]]></template>
+</category>
+<category>
+	<pattern>SITIO DE MATRÍCULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>SITIO DE MATRICULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>SITIO DE MATRICULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>SITIO DE MATRÍCULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRÍCULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRÍCULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRÍCULAS</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRÍCULAS *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRICULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRICULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRICULAS</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO DE MATRICULAS *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRÍCULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRÍCULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRICULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRICULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRICULAS</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRICULAS *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRÍCULAS</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* PAGINA DE MATRÍCULAS *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRÍCULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRÍCULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRICULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRICULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRÍCULAS</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRÍCULAS *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRICULA</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+<category>
+	<pattern>* SITIO * DE MATRICULA *</pattern>
+	<template><srai>CUAL ES EL SITIO DE MATRICULAS</srai></template>
+</category>
+
+</aiml>

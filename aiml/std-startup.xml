@@ -1,0 +1,15 @@
+<aiml version="1.0">
+
+<!-- This category works with the standard AIML Set -->
+<category>
+<pattern>LOAD AIML B</pattern>
+<template>
+
+<!-- Cargar sets de AIML de la UTP -->
+<learn>aiml/utp/matricula.aiml</learn>
+<learn>aiml/utp/usuario.aiml</learn>
+
+</template>
+</category>
+
+</aiml>
