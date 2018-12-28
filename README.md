@@ -23,7 +23,7 @@ Agente Inteligente para el soporte del Sistema de Matrículas de la Universidad 
 ![Demo](https://raw.githubusercontent.com/Yizack/iautp/master/Captura1.png)
 
 ## Preguntas que se pueden hacer 
-Cada pregunta se puede hacer de diferentes maneras. (ver los archivos aiml)
+Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](https://github.com/Yizack/iautp/tree/master/aiml/utp))
 ##### Sistema de matrícula `aiml/utp/matricula.aiml`
 1.	¿Puedo ver los estudiantes matriculados en un grupo?
 2.	Se me olvidó la contraseña del sitio de matricula
