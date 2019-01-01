@@ -53,12 +53,13 @@ Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](htt
 ```
 ##### Interacciones adicionales `aiml/utp/usuario.aiml`
 ```
-25. Hola
-26. Mi nombre es
-27. ¿Cual es mi nombre?
-28. ¿Cómo te llamas?
-29. Adios
-30. ¿Quién te creó?
-31. Oye
-32. ¿Que haces?
-33. ¿De donde eres?```
+25.	Hola
+26.	Mi nombre es
+27.	¿Cual es mi nombre?
+28.	¿Cómo te llamas?
+29.	Adios
+30.	¿Quién te creó?
+31.	Oye
+32.	¿Que haces?
+33.	¿De donde eres?
+```
