@@ -1,7 +1,7 @@
 	.fixed-panel {
             min-height: 400px;
             max-height: 400px;
-			background-image: url('/images/utp-gris.png');
+			background-image: url('../images/utp-gris.png');
             background-repeat: no-repeat;
 			background-position: center;
 			background-size: 300px 300px;

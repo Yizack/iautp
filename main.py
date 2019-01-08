@@ -16,12 +16,12 @@ def get_css():
 	
 @app.route("/images/utp-gris.png")
 def get_image():
-    filename = 'images/utp-logo-gris.png'
+    filename = 'templates/images/utp-gris.png'
     return send_file(filename, mimetype='image/png')
 	
 @app.route("/images/favicon.ico")
 def get_image2():
-    filename = 'images/favicon.ico'
+    filename = 'templates/images/favicon.ico'
     return send_file(filename, mimetype='image/vnd.microsoft.icon')
 
 @app.route("/ask", methods=['POST'])
