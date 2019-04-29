@@ -20,7 +20,8 @@ Agente Inteligente para el sitio de matrículas de la Universidad Tecnológica d
 9.	Abrir el navegador web y buscar la direccion: `localhost:5000`
 # Demo
 - http://iautp.yizack.com
-![Demo](https://raw.githubusercontent.com/Yizack/iautp/master/Captura1.png)
+![Demo1](https://raw.githubusercontent.com/Yizack/iautp/master/Captura1.png)
+![Demo2](https://raw.githubusercontent.com/Yizack/iautp/master/Captura2.png)
 
 ## Preguntas que se pueden hacer 
 Cada pregunta se puede hacer de diferentes maneras. ([ver los archivos aiml](https://github.com/Yizack/iautp/tree/master/aiml/utp))
