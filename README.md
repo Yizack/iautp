@@ -1,5 +1,5 @@
 # iautp (Chatbot)
-Agente Inteligente para el soporte del Sistema de Matrículas de la Universidad Tecnológica de Panamá
+Agente Inteligente para el sitio de matrículas de la Universidad Tecnológica de Panamá
 # Instalación
 1.	Instalar Python 2.7
 
