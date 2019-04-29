@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify, send_file
 import aiml
 import os
-
+# Set Path=C:/Python27
 kernel = aiml.Kernel()
 app = Flask(__name__)
 
