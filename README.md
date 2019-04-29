@@ -1,7 +1,7 @@
 # iautp (Chatbot)
 Agente Inteligente para el sitio de matrículas de la Universidad Tecnológica de Panamá
 # Instalación
-1.	Instalar Python 2.7
+1.	Instalar [Python 2.7](https://www.python.org/download/releases/2.7/)
 
 2.	Abrir `cmd.exe` y ejecutar para ir al disco local C: `cd\`
 
